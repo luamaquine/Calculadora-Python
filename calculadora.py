@@ -10,7 +10,7 @@ janela.configure(background="black")
 
 #Criando Frames
 
-frame_tela = Frame(janela, width=300, height=50)
+frame_tela = Frame(janela, width=300, height=50, bg=cor3)
 frame_tela.grid(row=0, column=0)
 
 frame_corpo = Frame(janela, width=300, height=300)
@@ -18,8 +18,9 @@ frame_corpo.grid(row=1, column=0)
 
 #Criando Label
 
-app_label = Label(frame_tela, text="123456789", width=13, height=2, padx=7, anchor="e", fg="black", font=('Ivy 18'), justify=RIGHT)
+app_label = Label(frame_tela, text="123456789", width=13, height=2, padx=7, anchor="e", fg="white", font=('Ivy 18'), justify=RIGHT, bg=cor3)
 app_label.place(x=100, y=0)
+
 #Criando botoes
 
 bt1 = Button(frame_corpo, text="C", width=16, height=2, bg="gray", font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
